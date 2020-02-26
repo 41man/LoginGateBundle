@@ -22,7 +22,10 @@ $this->addSql('CREATE TABLE failure_login_attempt (id INT AUTO_INCREMENT NOT NUL
 ```
 
 bundles.php
-Add Anyx\LoginGateBundle\LoginGateBundle::class => ['all' => true]
+Add 
+```php
+Anyx\LoginGateBundle\LoginGateBundle::class => ['all' => true]
+```
 
 Add in /config/packages/login_gate.yaml:
 
