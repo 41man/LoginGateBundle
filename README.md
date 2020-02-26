@@ -14,6 +14,16 @@ Add this bundle via Composer:
 ```
 composer require 41man/login-gate-bundle
 ```
+
+and manually set fork git
+```
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/41man/LoginGateBundle"
+        }
+    ]
+```
 ## Configuration:
 
 Also require manuall sql request call (for migration):
