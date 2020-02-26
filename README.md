@@ -16,6 +16,12 @@ composer require 41man/login-gate-bundle
 ```
 ## Configuration:
 
+Also require manuall sql request call (for migration):
+$this->addSql('CREATE TABLE failure_login_attempt (id INT AUTO_INCREMENT NOT NULL, ip VARCHAR(45) NOT NULL, created_at DATETIME NOT NULL, data LONGTEXT NOT NULL COMMENT \'(DC2Type:array)\', INDEX ip (ip), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
+
+bundles.php
+Add Anyx\LoginGateBundle\LoginGateBundle::class => ['all' => true]
+
 Add in /config/packages/login_gate.yaml:
 
 ```yml
