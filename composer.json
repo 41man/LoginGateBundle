@@ -1,14 +1,14 @@
 {
-    "name": "leserg41/login-gate-bundle",
+    "name": "anyx/login-gate-bundle",
     "description": "Checking brute force attacks on site",
     "keywords": ["security", "brute-force"],
-    "homepage": "https://github.com/41man/LoginGateBundle",
+    "homepage": "https://github.com/anyx/LoginGateBundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Sergey Levchenko",
-            "email": "ironias@yandex.ru"
+            "name": "Aleksandr Klimenkov",
+            "email": "alx.devel@gmail.com"
         }
     ],
     "require": {
