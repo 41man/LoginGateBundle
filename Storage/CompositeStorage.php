@@ -59,7 +59,7 @@ class CompositeStorage implements StorageInterface
             $countAttempts[] = $storage->getCountAttempts($request);
         }
 
-        return (int) max($countAttempts);
+        return (int) (!empty($countAttempts)) ? max($countAttempts) : 0;
     }
 
     /**
