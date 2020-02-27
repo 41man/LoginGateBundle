@@ -30,6 +30,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('watch_period')->defaultValue(10000)->end()
                 ->arrayNode('options')
+                    ->addDefaultsIfNotSet()
                     ->children()
                         ->scalarNode('max_count_attempts')->defaultValue(3)->end()
                         ->scalarNode('timeout')->defaultValue(3000)->end()
