@@ -2,7 +2,7 @@
     "name": "41man/login-gate-bundle",
     "description": "Checking brute force attacks on site",
     "keywords": ["security", "brute-force"],
-    "homepage": "https://github.com/anyx/LoginGateBundle",
+    "homepage": "https://github.com/41man/LoginGateBundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
