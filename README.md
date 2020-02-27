@@ -15,26 +15,11 @@ Add this bundle via Composer:
 composer require 41man/login-gate-bundle
 ```
 
-and manually set fork git
-```
-"repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/41man/LoginGateBundle"
-        }
-    ]
-```
 ## Configuration:
 
 Also require manuall sql request call (for migration):
 ```php
 $this->addSql('CREATE TABLE failure_login_attempt (id INT AUTO_INCREMENT NOT NULL, ip VARCHAR(45) NOT NULL, created_at DATETIME NOT NULL, data LONGTEXT NOT NULL COMMENT \'(DC2Type:array)\', INDEX ip (ip), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
-```
-
-bundles.php
-Add 
-```php
-Anyx\LoginGateBundle\LoginGateBundle::class => ['all' => true]
 ```
 
 Add in /config/packages/login_gate.yaml:
